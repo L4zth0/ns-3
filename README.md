@@ -2,8 +2,14 @@
 build the environment MPTCP  on docker.
 
 ## How to use
+First install docker-compose 
+```
+audo apt-get install docker-compose
+```
 
-Download the Dockerfile and run 
+### Download the Dockerfile and run
+
+After downloading and extracting the zip file, enter the folder and run :
 ```
 docker-compose up -d
 ```
