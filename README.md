@@ -18,6 +18,14 @@ or the next command:
 ```
 docker build - < Dockerfile
 ```
+Once the docker build is finished must tag and run the image:
+```
+sudo docker tag ns3-mptcp <IMAGE_ID>
+``
+```
+docker run ns3-mptcp
+```
+
 On the container, run these comands and you can check the MP-TCP activities you may be asked to run ```./waf configure```
 ```
 $ cd /src/mptcp
