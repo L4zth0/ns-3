@@ -25,7 +25,10 @@ sudo docker tag ns3-mptcp <IMAGE_ID>
 ```
 docker run ns3-mptcp
 ```
-
+or to run in terminal 
+```
+sudo docker run -v /Home/Documents/configuration:/mnt  -it --rm --privileged --pid='host' --network host -v /var/run/docker.sock:/var/run/docker.sock ns3-mptcp /bin/bash
+```
 On the container, run these comands and you can check the MP-TCP activities you may be asked to run 
 ```
 $ cd /src/mptcp
